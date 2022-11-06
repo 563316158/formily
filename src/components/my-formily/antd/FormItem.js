@@ -3,7 +3,7 @@ import { useContext } from "react";
 
 const FormItem = observer(({ children }) => {
   const field = useContext(FieldContext);
-  console.log("field:", field);
+  // console.log("field:", field);
   return (
     <div>
       <div>{field.title}</div>
