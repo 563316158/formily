@@ -1,4 +1,5 @@
 import { createForm } from "@formily/core";
+import { observable, Tracker } from "@formily/reactive";
 // import {
 //   FormProvider,
 //   Field,
@@ -6,8 +7,9 @@ import { createForm } from "@formily/core";
 //   FieldContext,
 //   useParentForm,
 // } from "@formily/react";
-import { observer } from "@formily/reactive-react";
+// import { observer } from "@formily/reactive-react";
 // import {FormItem, Input, Submit} from "@formily/antd";
+import { observer } from "@/components/my-formily/reactive-react";
 
 import { FormItem, Input, Submit } from "@/components/my-formily/antd";
 import {
@@ -17,6 +19,9 @@ import {
   FieldContext,
   useParentForm,
 } from "@/components/my-formily/react";
+
+
+console.log('observer:',observer);
 
 export {
   // core
@@ -34,4 +39,6 @@ export {
   FormItem,
   Input,
   Submit,
+  observable,
+  Tracker,
 };

@@ -67,7 +67,7 @@ import {
           </Submit>
   
           <div>
-            <FormConsumer>{() => form.values.name}</FormConsumer>
+            <FormConsumer>{(form) => form.values.name}</FormConsumer>
           </div>
         </FormProvider>
       </div>
